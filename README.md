@@ -1,4 +1,4 @@
-# Decision Tree 
+# Coding Guidelines 
 
 - Code must be:
   1. correct
@@ -61,7 +61,6 @@
 
 # Rules of Thumb
 
-
 - Break projects up into smaller libraries when it starts to make sense
 - Break up large functions early  
 - Prefer static methods 
@@ -77,5 +76,4 @@
 
 - Use implicitly typed variables ('var') as much as possible
 - Prefer `IReadOnlyList`  over List, or Array, as an argument 
-
-# Engineering 
+- Prefer expression body methods
