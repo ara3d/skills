@@ -1,26 +1,30 @@
 # Coding Guidelines 
 
-- Code must be:
+Code must be:
   1. correct
   2. concise
-  3. simple
-  4. resuable
-  5. performant
+  3. resuable
+  4. performant
   
 # General Principles
 
+- Prefer
+  - immutable data structures
+  - expressions to statements
 - Start with the simplest thing that could possibly work
   - Note areas that need validation or deeper consideration as to-do statements
   - Once that works consider areas for improvement
-- Keep code short and to the point
-  - Humand and AI agents have a limited context windows  
-  - Shorter code is easier to read, understand, and validate
-  - Minimize the number of statements
-  - Prefer expressions to statements
-  - Break up large functions, classes, and projects    
-  - Place assertions to document assumptions, and test preconditions, postconditions
-  - Write as little code as possible
-- Simplify code
+- When developing new features
+  - Try to build them in isolation first
+  - Often unit test projects are a good place to do that   
+- Refactor frequently to achieve the code goals
+- Documentation should be useful and non-trivial
+  - for example non-obvious assumptions, trade-offs, special edge cases, non-intituitve bugs  
+- When refactoring 
+  - Break up large functions, classes, and projects
+  - Put general purprose utility code in helper classes and libraries     
+- Place assertions to document assumptions, and test preconditions, postconditions
+- Simplify code as often as possible 
   - It should be hard to use code wrongly
   - Minimize conditions for calling the code
   - Code should be generous in the data it accepts and conservative
