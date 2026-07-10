@@ -8,7 +8,7 @@ Code must be:
   
 # General Principles
 
-- Prefer
+- Preferf
   - immutable data structures
   - expressions to statements
 - Start with the simplest thing that could possibly work
